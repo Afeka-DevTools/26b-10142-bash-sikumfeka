@@ -5,7 +5,7 @@
 | Member | GitHub username | Role |
 | --- | --- | --- |
 | רז מצליח | `razmazlih` | Team leader |
-| בן פישר | Pending | Team member |
+| בן פישר | `Benjamin-1Fisher` | Team member |
 | עומרי בוגוסלבסקי | Pending | Team member |
 
 Repository: https://github.com/Afeka-DevTools/26b-10142-bash-sikumfeka
@@ -16,10 +16,15 @@ Repository: https://github.com/Afeka-DevTools/26b-10142-bash-sikumfeka
 .
 ├── README.md
 └── scripts/
+    ├── add_prefix_to_txt.sh
     ├── backup_directory.sh
     ├── check_internet.sh
     ├── cleanup_project_temp.sh
+    ├── delete_old_files.sh
+    ├── disk_usage_by_directory.sh
+    ├── file_statistics.sh
     ├── port_scan.sh
+    ├── random_password.sh
     └── weather_city.sh
 ```
 
@@ -51,15 +56,17 @@ All scripts were written for Bash and tested on macOS. They use common command l
 | `scripts/port_scan.sh` | Scan open ports on an IP address or hostname | `./scripts/port_scan.sh 127.0.0.1 1 100` |
 | `scripts/cleanup_project_temp.sh` | Clean temporary project files such as `.pyc`, `.class`, `node_modules` | `./scripts/cleanup_project_temp.sh .` for dry-run, then `./scripts/cleanup_project_temp.sh . --apply` |
 
-### בן פישר - Planned Scripts
+### בן פישר
 
-| Planned script | Assignment topic |
-| --- | --- |
-| `scripts/add_prefix_to_txt.sh` | Add a prefix to all `.txt` files in a selected directory |
-| `scripts/file_statistics.sh` | Count lines, words and characters in every file in a directory |
-| `scripts/delete_old_files.sh` | Delete files older than X days from a selected directory |
-| `scripts/disk_usage_by_directory.sh` | Show disk usage for each directory |
-| `scripts/random_password.sh` | Generate a random 10-character password with uppercase, lowercase, digit and symbol |
+GitHub username: `Benjamin-1Fisher`
+
+| Script | Assignment topic | How to run |
+| --- | --- | --- |
+| `scripts/add_prefix_to_txt.sh` | Add a prefix to all `.txt` file names in a selected directory | `./scripts/add_prefix_to_txt.sh ./notes old_` |
+| `scripts/file_statistics.sh` | Count lines, words and characters in every regular file in a directory | `./scripts/file_statistics.sh ./scripts` |
+| `scripts/delete_old_files.sh` | Find or delete files older than X days from a selected directory | Dry-run: `./scripts/delete_old_files.sh ./logs 30`; delete: `./scripts/delete_old_files.sh ./logs 30 --apply` |
+| `scripts/disk_usage_by_directory.sh` | Show disk usage for a directory and each direct subdirectory | `./scripts/disk_usage_by_directory.sh .` |
+| `scripts/random_password.sh` | Generate a random password with uppercase, lowercase, digit and symbol | Default 10 characters: `./scripts/random_password.sh`; custom length: `./scripts/random_password.sh 16` |
 
 ### עומרי בוגוסלבסקי - Planned Scripts
 
