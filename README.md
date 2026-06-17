@@ -6,7 +6,7 @@
 | --- | --- | --- |
 | רז מצליח | `razmazlih` | Team leader |
 | בן פישר | `Benjamin-1Fisher` | Team member |
-| עומרי בוגוסלבסקי | Pending | Team member |
+| עומרי בוגוסלבסקי | `obiedaslayer` | Team member |
 
 Repository: https://github.com/Afeka-DevTools/26b-10142-bash-sikumfeka
 
@@ -75,7 +75,7 @@ GitHub username: `Benjamin-1Fisher`
 
 ### עומרי בוגוסלבסקי
 
-GitHub username: Pending
+GitHub username: `obiedaslayer`
 
 | Script | Assignment topic | How to run |
 | --- | --- | --- |
