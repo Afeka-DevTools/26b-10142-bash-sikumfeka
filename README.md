@@ -20,11 +20,16 @@ Repository: https://github.com/Afeka-DevTools/26b-10142-bash-sikumfeka
     ├── backup_directory.sh
     ├── check_internet.sh
     ├── cleanup_project_temp.sh
+    ├── compare_files.sh
+    ├── countdown_timer.sh
     ├── delete_old_files.sh
+    ├── directory_summary.sh
     ├── disk_usage_by_directory.sh
     ├── file_statistics.sh
+    ├── git_status_subdirs.sh
     ├── port_scan.sh
     ├── random_password.sh
+    ├── system_uptime.sh
     └── weather_city.sh
 ```
 
@@ -68,19 +73,21 @@ GitHub username: `Benjamin-1Fisher`
 | `scripts/disk_usage_by_directory.sh` | Show disk usage for a directory and each direct subdirectory | `./scripts/disk_usage_by_directory.sh .` |
 | `scripts/random_password.sh` | Generate a random password with uppercase, lowercase, digit and symbol | Default 10 characters: `./scripts/random_password.sh`; custom length: `./scripts/random_password.sh 16` |
 
-### עומרי בוגוסלבסקי - Planned Scripts
+### עומרי בוגוסלבסקי
 
-| Planned script | Assignment topic |
-| --- | --- |
-| `scripts/countdown_timer.sh` | Countdown timer using `HH:MM:SS` input |
-| `scripts/system_uptime.sh` | Show system uptime |
-| `scripts/directory_summary.sh` | Count files, directories and links in a selected directory |
-| `scripts/git_status_subdirs.sh` | Show git status for every subdirectory in a selected directory |
-| `scripts/compare_files.sh` | Compare two files |
+GitHub username: Pending
+
+| Script | Assignment topic | How to run |
+| --- | --- | --- |
+| `scripts/countdown_timer.sh` | Countdown timer using `HH:MM:SS` input | `./scripts/countdown_timer.sh 00:00:10` |
+| `scripts/system_uptime.sh` | Show system uptime | `./scripts/system_uptime.sh` |
+| `scripts/directory_summary.sh` | Count direct files, directories, symbolic links and other entries in a selected directory | `./scripts/directory_summary.sh ./scripts` |
+| `scripts/git_status_subdirs.sh` | Show git status for git repositories in direct subdirectories | `./scripts/git_status_subdirs.sh .` |
+| `scripts/compare_files.sh` | Compare two files and print a unified diff when they differ | `./scripts/compare_files.sh ./old.txt ./new.txt` |
 
 ## Notes for Submission
 
 - Every script starts with `#! /bin/bash`.
 - Every script should be executable with `chmod +x scripts/script_name.sh`.
 - Each team member should commit only the scripts they wrote.
-- Ben and Omri should update this README after adding their scripts and GitHub usernames.
+- Team members should keep this README updated with their GitHub usernames and script run instructions.
