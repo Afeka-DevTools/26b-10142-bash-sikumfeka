@@ -57,7 +57,7 @@ All scripts were written for Bash and tested on macOS. They use common command l
 | --- | --- | --- |
 | `scripts/backup_directory.sh` | Backup directory content to a `.tar.gz` file | `./scripts/backup_directory.sh ./scripts ./backups` |
 | `scripts/check_internet.sh` | Check internet connectivity and print a log | `./scripts/check_internet.sh` or `./scripts/check_internet.sh google.com` |
-| `scripts/weather_city.sh` | Fetch current weather for a city | `./scripts/weather_city.sh Tel Aviv` |
+| `scripts/weather_city.sh` | Fetch current weather for a city | `./scripts/weather_city.sh "Tel Aviv"` |
 | `scripts/port_scan.sh` | Scan open ports on an IP address or hostname | `./scripts/port_scan.sh 127.0.0.1 1 100` |
 | `scripts/cleanup_project_temp.sh` | Clean temporary project files such as `.pyc`, `.class`, `node_modules` | `./scripts/cleanup_project_temp.sh .` for dry-run, then `./scripts/cleanup_project_temp.sh . --apply` |
 
@@ -91,3 +91,6 @@ GitHub username: `obiedaslayer`
 - Every script should be executable with `chmod +x scripts/script_name.sh`.
 - Each team member should commit only the scripts they wrote.
 - Team members should keep this README updated with their GitHub usernames and script run instructions.
+- Backup output directories should be outside the source directory.
+- Port scans accept ports from `1` to `65535`.
+- Cleanup scripts run in dry-run mode unless `--apply` is provided.
