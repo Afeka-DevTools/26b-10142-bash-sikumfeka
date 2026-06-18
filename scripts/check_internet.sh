@@ -15,6 +15,13 @@ require_command() {
     fi
 }
 
+is_valid_host() {
+    case "$1" in
+        ''|-*|*[[:space:]]*) return 1 ;;
+        *) return 0 ;;
+    esac
+}
+
 if [ "$#" -gt 1 ]; then
     print_usage
     exit 1
@@ -22,12 +29,18 @@ fi
 
 require_command ping
 require_command date
+require_command uname
 
 HOST="${1:-8.8.8.8}"
 COUNT=4
 LINUX_TIMEOUT_SECONDS=3
 MAC_TIMEOUT_MILLISECONDS=3000
 OS_NAME="$(uname -s)"
+
+if ! is_valid_host "$HOST"; then
+    echo "Error: host must be a non-empty IP address or hostname without spaces and must not start with '-'." >&2
+    exit 1
+fi
 
 echo "Internet connectivity check"
 echo "Time: $(date '+%Y-%m-%d %H:%M:%S')"
